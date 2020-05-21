@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo{
+            width: 900px;
+            height: 300px;
+            position: absolute;
+            margin-top: 180px;
+            margin-left: 100px;
+        }
+        .pho{
+            display: inline-block;
+            width: 120px;
+            height: 140px;
+            margin-left: 10px;
+            background-color: white;
+        }
+        .pho img{
+          width: 100px;
+          height: 80px;  
+          display: inline-block;
+          padding-left: 10px;
+          padding-top: 8px;
+          padding-bottom: 10px;
+           
+        }
+        .word{
+           padding-left: 40px;
+        }
+        .pho:nth-of-type(1),.pho:nth-of-type(5){
+            transform: rotate(5deg);
+        }
+        .pho:nth-of-type(2),.pho:nth-of-type(6){
+            transform: rotate(-6deg);
+        }
+        .pho:nth-of-type(3){
+            transform: rotate(8deg);
+        }
+        .pho:nth-of-type(4){
+            transform: rotate(-5deg);
+        }
+        .pho:hover{
+            transform: rotate(0deg);
+            transform: scale(1.5);
+        }
+       
+    </style>
+</head>
+<body>
+    <div style="background: url(images/bg3.jpg) no-repeat;height: 780px; margin: 0 auto;">
+        <div class="photo">
+            <div class="pho"><img src="images/11.jpg" alt="#"><span class="word">相识</span></div>
+            <div class="pho"><img src="images/22.jpg" alt="#"><span class="word">凝视</span></div>
+            <div class="pho"><img src="images/33.jpg" alt="#"><span class="word">甜睡</span></div>
+            <div class="pho"><img src="images/44.jpg" alt="#"><span class="word">逗乐</span></div>
+            <div class="pho"><img src="images/55.jpg" alt="#"><span class="word">奔跑</span></div>
+            <div class="pho"><img src="images/66.jpg" alt="#"><span class="word">漠视</span></div> 
+        </div>
+    </div>
+</body>
+</html>
